@@ -11,12 +11,12 @@
 }
 
 nav {
-  width: 100vh;
-  margin-top: 4vh;
+  /* width: 100dvh;
+  margin-top: 4dvh; */
 }
 .nav-container {
-  margin-inline: 15vw;
-  width: 70vw;
+  margin-inline: 15dvw;
+  width: 70dvw;
   justify-content: space-between;
   align-items: center;
 }
@@ -65,14 +65,19 @@ nav {
   background-color: gold;
 }
 
+
+
+
+/* main */
+
 .team-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-items: center;
   align-items: center;
-  min-height: 70vh;
-  width: 100vw;
+  min-height: 70dvh;
+  width:fit-content;
   margin: 0 auto;
 }
 .team-card {
@@ -81,7 +86,6 @@ nav {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
   padding: 2rem 1.5rem;
   max-width: 320px;
-  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -113,6 +117,37 @@ nav {
   font-style: italic;
   margin-top: 0.5rem;
 }
+
+
+
+/* Footer */
+
+.site-footer {
+  color: #222;
+  font-family: var(--font-manrope, "Manrope", sans-serif);
+  margin-top: 2rem;
+}
+
+.footer-container {
+  max-width: 70dvw;
+  margin-inline: 15dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-logo {
+  height: 2.5rem;
+}
+
+/* Responsive */
+
 @media (max-width: 900px) {
   .team-grid-container {
     grid-template-columns: 1fr;
@@ -121,8 +156,41 @@ nav {
     padding: 2rem 0;
   }
 }
-@media (max-width: 768px){
- .nav-opt{
-  display:none;
- } 
+@media (max-width: 425px) {
+  .nav-container{
+    margin-inline: 0vw;
+  }
+  .nav-opt {
+    gap:0rem
+  }
+}
+@media (max-width: 375px) {
+  .nav-container{
+    margin-inline: 50%;
+  }
+  .nav-opt {
+    display: none;
+    gap:0rem
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container{
+    margin-inline: 15vw;
+  }
+  .nav-opt {
+    /* display: none; */
+    gap:0.2rem
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .footer-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
