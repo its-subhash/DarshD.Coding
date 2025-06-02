@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Manrope';
+    src: url('/media/fonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+    /* font-weight: 400; */
+    /* font-style: normal; */
+    /* font-display: swap; */
+  }
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('/media/fonts/Playwrite_HU/PlaywriteHU-VariableFont_wght.ttf') format('truetype');
+    /* font-weight: 500; */
+    /* font-style: normal; */
+    /* font-display: swap; */
+  }
+}
