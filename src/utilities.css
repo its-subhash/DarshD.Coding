@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+}
+.display-none{
+    display: none;
+}
+.display {
+    display: block;
+}

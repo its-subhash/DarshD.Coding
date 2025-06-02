@@ -1,0 +1,5 @@
+1. Fix the footer icon to place it in center when screen size is less than 450px.
+2. Make Dark Mode functional.
+3. Make menu button functional / interchangable to close button.
+4. Place cards in center when screen size is less than 450px.
+5. Fix darkmode button and group it with menu button.
